@@ -155,3 +155,54 @@ code {
   background-color: #c40000;
   transform: scale(1.15);
 }
+.certificate-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.certificate-image {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-image {
+  transform: scale(1.05);
+}
+
+.certificate-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.certificate-card:hover .certificate-hover-overlay {
+  opacity: 1;
+}
+
+.hover-content {
+  text-align: center;
+  color: white;
+}
+
+.hover-content svg {
+  margin-bottom: 8px;
+}
+
+.hover-content span {
+  font-size: 18px;
+  font-weight: 600;
+}
