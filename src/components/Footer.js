@@ -14,7 +14,7 @@ export const Footer = () => {
         <Row className="align-items-center my-2">
      
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <a href="#"><img src={logo} alt="Logo" /></a>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
