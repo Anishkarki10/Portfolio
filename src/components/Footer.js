@@ -4,6 +4,8 @@ import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import navIcon4 from "../assets/img/nav-icon4.svg";
+
 
 export const Footer = () => {
   return (
@@ -19,6 +21,7 @@ export const Footer = () => {
               <a href="https://www.linkedin.com/in/anish-karki-aaa926337/"><img src={navIcon1} alt="Icon" /></a>
               <a href="https://www.facebook.com/anish.karki.0/"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/anish.karki.101/"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://github.com/Anishkarki10"><img src={navIcon4} alt="Icon" /></a>
             </div>
             <p>Copyright 2025. All Rights Reserved</p>
           </Col>

@@ -60,7 +60,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Anish`} <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
   <span className="wrap">{text}</span>
 </span></h1>
-                  <p>Hi, I’m Anish Karki a website developer and UI/UX designer. I can help bring your project to life! Let’s connect! I’m really excited to work with you. I have 1 years of experience in this field.</p>
+                  <p>Hi, I’m Anish Karki a website developer and UI/UX designer. I can help bring your project to life! Let’s connect! I’m really excited to work with you. I have 1 year of experience in this field.</p>
                 
                  <Resume/>
               </div>}
