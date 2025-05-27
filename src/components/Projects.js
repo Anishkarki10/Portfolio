@@ -18,6 +18,11 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: "Tic Tac Toe ",
+      description: "Tic Tac Toe Game ",
+      imgUrl: projImg5,
+      url: "https://anishkarki10.github.io/Tic-Tac-Toe/",
+    }, {
       title: "Weather Tracker",
       description: "It can help Users to track Weather Conditions",
       imgUrl: projImg1,
@@ -28,6 +33,12 @@ export const Projects = () => {
       description: "It can help Users to Generate QR Codes",
       imgUrl: projImg4,
       url: "https://anishkarki10.github.io/QR-Code-Generator/",
+    },
+    {
+      title: "News Website",
+      description: "Design & Development",
+      imgUrl: projImg3,
+      url: "https://news.anishkarki.com",
     },
     {
       title: "Ecommerce Website",
@@ -41,18 +52,8 @@ export const Projects = () => {
       imgUrl: projImg2,
       url: "https://anishkarki10.github.io/ingo/",
     },
-    {
-      title: "Finery Website",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      url: "https://anish10112.github.io/Finery/",
-    },
-    {
-      title: "Tic Tac Toe ",
-      description: "Tic Tac Toe Game ",
-      imgUrl: projImg5,
-      url: "https://anishkarki10.github.io/Tic-Tac-Toe/",
-    },
+
+
   ];
 
   return (
