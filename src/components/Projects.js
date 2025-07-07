@@ -8,8 +8,10 @@ import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-6.png";
 import projImg6 from "../assets/img/project-7.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import cer2 from "../assets/img/IMG.jpg";
-import cer1 from "../assets/img/IMG1.jpg";
+import cer3 from "../assets/img/IMG.jpg";
+import cer4 from "../assets/img/IMG1.jpg";
+import cer1 from "../assets/img/Coursera 88HJNOAU9FXX_page-0001.jpg"
+import cer2 from "../assets/img/Coursera IDYOQKIXZ5CJ_page-0001.jpg"
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -35,10 +37,10 @@ export const Projects = () => {
       url: "https://anishkarki10.github.io/QR-Code-Generator/",
     },
     {
-      title: "News Website",
+      title: "Food Ordering Website",
       description: "Design & Development",
       imgUrl: projImg3,
-      url: "https://news.anishkarki.com",
+      url: "https://ordering.anishkarki.com/",
     },
     {
       title: "Ecommerce Website",
@@ -137,7 +139,7 @@ export const Projects = () => {
 
                       <Tab.Pane eventKey="second">
                         <Row className="justify-content-center text-center">
-                          {[cer1, cer2].map((img, index) => (
+                          {[cer1, cer2, cer4, cer3].map((img, index) => (
                             <Col xs={12} md={6} key={index} className="mb-4">
                               <div
                                 className="certificate-card"

@@ -2,64 +2,52 @@ import meter1 from "../assets/img/meter1.png";
 import meter2 from "../assets/img/meter2.png";
 import meter3 from "../assets/img/meter3.png";
 import meter4 from "../assets/img/meter4.png";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import meter5 from "../assets/img/images (1).png";
+import meter6 from "../assets/img/meter5.png";
+import meter7 from "../assets/img/meter6.png";
+import meter8 from "../assets/img/meter7.png";
+import meter9 from "../assets/img/meter8.png";
+
+
+import "../App.css"; 
+
+const techStack = [
+  { icon: meter1, name: "UI/UX Design" },
+  { icon: meter5, name: "HTML" },
+  { icon: meter3, name: "CSS" },
+  { icon: meter6, name: "Bootstrap" },
+  { icon: meter7, name: "Tailwindcss" },
+  { icon: meter8, name: "JavaScript" },
+  { icon: meter2, name: "ReactJS" },
+  { icon: meter9, name: "C" },
+  { icon: meter4, name: "C++" },
+];
 
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
   return (
-    <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>My main skills include UI/UX design, Front-end development,<br></br>  React.js, and Git & Git Hub..</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>UI/UX Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>React JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Frontend Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter4} alt="Image" />
-                                <h5>C & C++</h5>
-                            </div>
-                        </Carousel>
-                    </div>
-                </div>
+    
+    <section 
+      className="skills-section"
+      id="skills"
+      style={{ position: "relative", zIndex: 1  }}
+    >
+      <div className="skills-container">
+        <h2 className="skills-title">Tech Stack</h2>
+        <p className="skills-subtitle">
+        Take a look at my skills <br /> I specialize in front-end development using HTML, CSS, JavaScript, React.js, Bootstrap, and Tailwind CSS. <br /> I’m also skilled in UI/UX design with Figma and have a strong foundation in C & C++.
+        </p>
+
+        <div className="skills-grid">
+          {techStack.map((tech, index) => (
+            <div key={index} className="skills-card">
+              <img src={tech.icon} alt={tech.name} />
+              <p>{tech.name}</p>
             </div>
+          ))}
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+
+
     </section>
-  )
-}
+  );
+};
