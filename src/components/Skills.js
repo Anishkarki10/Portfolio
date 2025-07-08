@@ -39,7 +39,8 @@ export const Skills = () => {
 
         <div className="skills-grid">
           {techStack.map((tech, index) => (
-            <div key={index} className="skills-card">
+            <div key={index} className="skills-card tech-card" style={{ animationDelay: "0.2s" }}>
+       
               <img src={tech.icon} alt={tech.name} />
               <p>{tech.name}</p>
             </div>
