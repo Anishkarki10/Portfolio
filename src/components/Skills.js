@@ -7,6 +7,7 @@ import meter6 from "../assets/img/meter5.png";
 import meter7 from "../assets/img/meter6.png";
 import meter8 from "../assets/img/meter7.png";
 import meter9 from "../assets/img/meter8.png";
+import { motion } from "framer-motion";
 
 
 import "../App.css"; 
@@ -36,7 +37,12 @@ export const Skills = () => {
         <p className="skills-subtitle">
         Take a look at my skills <br /> I specialize in front-end development using HTML, CSS, JavaScript, React.js, Bootstrap, and Tailwind CSS. <br /> I’m also skilled in UI/UX design with Figma and have a strong foundation in C & C++.
         </p>
-
+        <motion.div
+  whileHover={{ scale: 1.1 }}
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
         <div className="skills-grid">
           {techStack.map((tech, index) => (
             <div key={index} className="skills-card tech-card" style={{ animationDelay: "0.2s" }}>
@@ -45,7 +51,7 @@ export const Skills = () => {
               <p>{tech.name}</p>
             </div>
           ))}
-        </div>
+        </div></motion.div>
       </div>
 
 
